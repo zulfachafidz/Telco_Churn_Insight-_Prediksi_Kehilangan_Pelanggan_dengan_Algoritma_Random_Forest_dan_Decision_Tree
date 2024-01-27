@@ -42,4 +42,5 @@ Berdasarkan perbandingan, model menggunakan algoritma Random Forest lebih baik d
 - **F1-Score**: 88%
 
 ### 6. Identifikasi Variable yang Berpengaruh Terhadap Customer Churn
-Feature Importance menggunakan Random Forest menunjukkan bahwa variabel yang paling berpengaruh adalah Total Charges. Kesimpulan: pelanggan dengan Total Charges tinggi berpotensi melakukan churn lebih cepat.
+Feature Importance menggunakan Random Forest menunjukkan bahwa variabel yang paling berpengaruh adalah Total Charges. 
+Kesimpulan: pelanggan dengan Total Charges tinggi berpotensi melakukan churn lebih cepat.
