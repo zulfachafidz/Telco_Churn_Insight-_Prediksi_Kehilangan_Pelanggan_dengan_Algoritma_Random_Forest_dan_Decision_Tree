@@ -1,47 +1,47 @@
 # Telco Churn Insight: Memprediksi Kehilangan Pelanggan dengan Algoritma Random Forest dan Decision Tree
 
-## Deskripsi
-Masalah utama dalam dunia bisnis adalah Customer Churn, atau kehilangan pelanggan, terutama dalam industri telekomunikasi yang mengalami persaingan yang sangat ketat. Berdasarkan penelitian, rata-rata tingkat churn bulanan di antara empat operator nirkabel teratas di AS adalah 1,9% hingga 2%. Tingkat churn pelanggan menjadi isu krusial bagi perusahaan telekomunikasi karena berdampak signifikan pada tingkat pertumbuhan perusahaan.
+## Description
+The main problem in the business world is customer churn, or losing customers, especially in the telecommunications industry, which experiences very tight competition. To overcome this problem, an analysis was carried out to help the company understand how many customers have the potential to switch providers.
 
-## Tujuan
-Mengembangkan model klasifikasi menggunakan decision tree dan Random Forest untuk meramalkan kehilangan pelanggan dalam perusahaan telekomunikasi. Harapannya, model yang dihasilkan dapat membantu perusahaan memahami seberapa banyak pelanggan yang meninggalkan bisnis dan alasan di balik keputusan mereka untuk pergi.
+## analysis objectives
+Developing a classification model using decision trees and Random Forest to predict customer loss in telecommunications companies. The hope is that the resulting model can help companies understand how many customers are leaving the business and the reasons behind their decision to leave.
 
 ## Data Collection
-Dataset diperoleh langsung dari GitHub melalui sumber berikut: [Telco-Customer-Churn Dataset](https://github.com/arubhasy/dataset/blob/main/Telco-Customer-Churn.csv)
+The dataset was obtained directly from GitHub via the following source: [Telco-Customer-Churn Dataset](https://github.com/arubhasy/dataset/blob/main/Telco-Customer-Churn.csv)
 
 ## Bahasa 
-**Bahasa Pemrograman**: Python
+**Programming Language**: Python
 
-**Library yang digunakan**: numpy, pandas, matplotlib, plotly express, seaborn, scikit-learn
+**Libraries used**: numpy, pandas, matplotlib, plotly express, seaborn, scikit-learn
 
-## Analisis Data
+## Data Analysis
 ### 1. Data Understanding
-Pemahaman terkait data melibatkan analisis tipe data, volume tiap kategori, dan perbandingan antara customer churn dan no churn.
+Understanding data involves analyzing data types, the volume of each category, and comparing customer churn and no churn.
 
 ### 2. Data Preparation
-- **Data Cleaning**: Menggunakan metode menghapus null value karena hanya sedikit data yang bernilai null.
-- **Data Transformation**: Melakukan perubahan tipe data dan menghapus kolom yang tidak digunakan.
+- **Data Cleaning**: Uses a method of removing null values ​​because only a small amount of data has null values.
+- **Data Transformation**: Changes the data type and deletes unused columns.
 
 ### 3. Splitting data
-Pemisahan antara data test dan data train menggunakan rasio 80:20.
+The separation between test data and train data uses a ratio of 80:20.
 
-### 4. Modelling 
-Penerapan metode klasifikasi menggunakan algoritma Decision Tree dan Random Forest.
+### 4. Modelling
+Application of classification methods using the Decision Tree and Random Forest algorithms.
 
-### 5. Hasil Modelling dan Evaluasi Model
+### 5. Modeling Results and Model Evaluation
 #### Decision Tree
-Tingkat akurasi sebesar 72% dengan evaluasi positif yang lebih tinggi dibandingkan negatif. Evaluasi menunjukkan TN (True Negative) sebanyak 852 dan TP (True Positive) sebanyak 166.
+The accuracy rate is 72% with positive evaluations being higher than negative. The evaluation showed that the TN (True Negative) was 852 and the TP (True Positive) was 166.
 
 #### Random Forest
-Tingkat akurasi sebesar 81% dengan evaluasi positif yang lebih tinggi dibandingkan negatif. Evaluasi menunjukkan TN sebanyak 959 dan TP sebanyak 174.
+The accuracy rate is 81% with positive evaluations being higher than negative. Evaluation shows TN of 959 and TP of 174.
 
-Berdasarkan perbandingan, model menggunakan algoritma Random Forest lebih baik dengan hasil evaluasi sebagai berikut:
+Based on the comparison, the model using the Random Forest algorithm is better with the following evaluation results:
 - **Accuracy**: 81%
 - **Precision**: 85%
 - **Recall**: 91%
 - **F1-Score**: 88%
 
-### 6. Identifikasi Variable yang Berpengaruh Terhadap Customer Churn
-Feature Importance menggunakan Random Forest menunjukkan bahwa variabel yang paling berpengaruh adalah Total Charges. 
+### 6. Identify variables that influence customer churn
+Feature Importance using Random Forest shows that the most influential variable is Total Charges.
 
-Kesimpulan: pelanggan dengan Total Charges tinggi berpotensi melakukan churn lebih cepat.
+Conclusion: customers with high Total Charges have the potential to churn more quickly.
